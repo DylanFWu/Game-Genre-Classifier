@@ -46,7 +46,7 @@ def infer_tags(q):
 
 @app.route('/')
 def home():
-    return "Hello!"
+    return render_template('index.html')
 
 
 @app.route('/predict',methods=['POST'])
@@ -64,9 +64,8 @@ def predict():
     # perform prediction
     prediction = infer_tags(final_desc)
     
-    
     # show results
-    return prediction
+    return render_template('index.html', prediction_text='''Game genre(s) should be: {}'''.format(prediction))
 
 
 if __name__ == "__main__":
