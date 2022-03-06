@@ -1,9 +1,9 @@
 # LHL-Final-Project
 Using NLP to determine genre of game based on description.
 
-This project uses a multi-label binarizer on the training data to create an array of target genre variables. then using Tf-Idf on the description, and a one-vs-rest format running a linear regression model is used to predict the genres of the games. 
+This project uses a multi-label binarizer on the training data to create an array of target genre variables. then using Tf-Idf on the description, and one-vs-rest with a linear regression model is used to predict the genres of the games. 
 
-this is trained using a dataset consisting of 40,000 games and their descriptions from a web based game service called Steam. If it is retrained on other text data, provided there are also some type of label(type of product, features, models) a prediction can be made for other industries as well.
+this is trained using a dataset consisting of 40,000 games and their descriptions from a web based game service called Steam. If it is retrained on other text data, provided there is some type of label(type of product, optional features) and an associated description, a prediction can also be made.
 
 
 
